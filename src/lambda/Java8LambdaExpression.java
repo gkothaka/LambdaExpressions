@@ -1,11 +1,9 @@
 package lambda;
 
-interface A
-{
-	//void show();
-	//Default keyword must be used to define a method in Interface
-	default void print()
-	{
+interface A {
+	// void show();
+	// Default keyword must be used to define a method in Interface
+	default void print() {
 		System.out.println("I'm print method");
 	}
 }
@@ -23,25 +21,23 @@ interface A
 
 public class Java8LambdaExpression {
 
-	public static void main(String args[])
-	{
-		//For external class object creation 
-		//A obj = new ImpA();
-		//For Anonymous inner class object creation and method implementation
-//	A obj = new A()
-//			{
-//				public void show()
-//				{
-//					System.out.println("hello");
-//				}
-//			};
-		//Using Lambda expression 
-		//A obj = ()-> System.out.println("hello");
-	//obj.show();
-		A obj = new A()
-				{
-			
-				};
-	obj.print();
+	public static void main(String args[]) {
+		// For external class object creation
+		// A obj = new ImpA();
+		// For Anonymous inner class object creation and method implementation
+		// A obj = new A()
+		// {
+		// public void show()
+		// {
+		// System.out.println("hello");
+		// }
+		// };
+		// Using Lambda expression
+		// A obj = ()-> System.out.println("hello");
+		// obj.show();
+		A obj = new A() {
+
+		};
+		obj.print();
 	}
 }
