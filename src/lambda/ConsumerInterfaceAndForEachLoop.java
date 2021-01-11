@@ -13,7 +13,7 @@ public class ConsumerInterfaceAndForEachLoop {
 		{
 			System.out.println(obj.get(i));
 		}
-		//Enhanced For Loop
+		//Enhanced For Loop to print values
 		for(int i : obj)
 		{
 			System.out.println(i);
